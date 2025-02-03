@@ -19,7 +19,7 @@ const Header = () => {
         };
     }, [open]);
     return (
-        <div className='bg-light-black md:h-[100px] sm:h-16 h-[50px] flex items-center sticky z-40'>
+        <div className='bg-light-black md:h-[100px] sm:h-16 h-[50px] flex items-center'>
             <div className='container'>
                 <div className="container flex justify-between w-full mx-auto items-center relative">
                     <button onClick={() => setOpen(!open)} className={`hidden w-[39px] h-8 justify-center items-center max-xl:absolute max-xl:right-5 relative z-[70] max-xl:flex flex-col overflow-hidden`}>
