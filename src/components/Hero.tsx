@@ -24,7 +24,7 @@ const Hero = () => {
           <CustomButton title='Get Started' styleClass='md:!py-4 md:!px-7 !pt-3 !pb-[13px] !px-[22px]'/>
         </div>
       </div>
-      <Image src="/assets/images/webp/hero-bottom-border.webp" alt="border"/>
+      <Image src="/assets/images/webp/hero-bottom-border.webp" alt="border" width={1440} height={40} />
     </div>
   )
 }
