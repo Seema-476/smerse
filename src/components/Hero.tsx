@@ -6,6 +6,7 @@ import CustomButton from './common/CustomButton';
 
 const Hero = () => {
   return (
+    <>
     <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px]'>
       <Header />
       <div className='container'>
@@ -24,8 +25,9 @@ const Hero = () => {
           <CustomButton title='Get Started' styleClass='md:!py-4 md:!px-7 !pt-3 !pb-[13px] !px-[22px]'/>
         </div>
       </div>
-      <Image src="/assets/images/webp/hero-bottom-border.webp" alt="border" width={1440} height={40} />
     </div>
+     <div className='w-full h-10 bg-gradient-to-b from-deep-blue via-purple to-orange'></div>
+    </>
   )
 }
 

@@ -39,6 +39,7 @@ export default {
         "purple": "#c641c6",
         "blue": "#4e6cff",
         "deep-blue": "#952ffe",
+        "dark-blue": "#0a0a2b",
         "orange": "#ff676b",
         "light-black":"#0A0A2B80",
       },

@@ -6,4 +6,5 @@
 * {
   font-family: "lato", serif;
   scroll-behavior: smooth;
+  position: relative;
 }

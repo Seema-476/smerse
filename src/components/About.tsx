@@ -6,10 +6,10 @@ import { ABOUT_DATA } from "../utils/helper";
 
 const About: React.FC = () => {
     return (
-        <div className="py-11 bg-dark-blue">
+        <div className="lg:pt-11 bg-dark-blue sm:pt-24 max-sm:pt-[60px] pb-16">
             <div className="container">
                 <div className="lg:flex-row flex flex-col">
-                    <div>
+                    <div className="flex flex-col justify-center">
                         <Heading styleClass="pb-5" text="About Us" />
                         {ABOUT_DATA.map((obj, index) => (
                             <div key={index} className="flex gap-5 pb-2">
@@ -28,7 +28,7 @@ const About: React.FC = () => {
                             alt="about-image"
                             width={954}
                             height={690}
-                            className="" />
+                            className="max-xl:w-full" />
                     </div>
                 </div>
             </div>
