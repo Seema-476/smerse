@@ -2,8 +2,12 @@ export interface AboutItem {
     image: string;
     description: string;
 }
+export interface HeaderList {
+    title: string;
+    link: string;
+}
 
-export const HEADER_LIST = [
+export const HEADER_LIST: HeaderList[] = [
     {
         title: "Home",
         link: "#home",
