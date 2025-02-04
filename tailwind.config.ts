@@ -44,7 +44,7 @@ export default {
         "light-black":"#0A0A2B80",
       },
       boxShadow: {
-        "custom-xl": "0px 0px 15.01px 0px #FF676B33;", 
+        "custom-xl": "0px 0px 15.01px 0px #FFFFFF80",
       },
        backgroundImage: {
          "hero-bg": "url('/assets/images/webp/hero-bg.webp')",

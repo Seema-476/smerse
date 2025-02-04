@@ -4,9 +4,23 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Smerse",
   description: "SMERSE FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE",
-  metadataBase: new URL('https://smerse-phi.vercel.app/'),
   openGraph: {
-    images: '/meta-image.png',
+    title: "Smerse",
+    description: "FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE",
+    images: [
+      {
+        url: "/meta-image.png",
+        width: 800,
+        height: 600,
+        alt: "Smerse Branding Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smerse",
+    description: "FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE",
+    images: ["/meta-image.png"],
   },
 };
 

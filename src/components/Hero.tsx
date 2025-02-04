@@ -9,10 +9,14 @@ const Hero = () => {
     <>
     <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative'>
         <Header />
-        <Image src="/assets/images/svg/hero-left-ellipse.svg" alt='hero-left-ellipse' width={164} height={164}
-          className='max-w-[164px] absolute left-0 top-7' />
-        <Image src="/assets/images/svg/hero-right-ellipse.svg" alt='hero-right-ellipse' width={164} height={164}
-          className='max-w-[164px] absolute right-0 bottom-0' />
+        <div className='xl:block hidden'>
+          <Image src="/assets/images/svg/hero-left-ellipse.svg" alt='hero-left-ellipse' width={164} height={164}
+            className='max-w-[164px] absolute left-0 top-7' />
+      </div>
+        <div className='md:block hidden'>
+          <Image src="/assets/images/svg/hero-right-ellipse.svg" alt='hero-right-ellipse' width={164} height={164}
+            className='max-w-[164px] absolute right-0 xl:bottom-0 -bottom-24' />
+       </div>
       <div className='container'>
         <div className='flex flex-col items-center'>
           <Image src="/assets/images/webp/hero-logo.webp" alt='hero-logo' width={404} height={241} className='lg:max-w-[404px] md:max-w-[360px] sm::max-w-[300px] max-w-[256px] lg:pt-[52px] pt-[79px] md:pb-8 pb-[108px]' />
