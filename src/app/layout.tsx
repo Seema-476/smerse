@@ -32,7 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <div className="overflow-hidden">
+          {children}
+        </div>
       </body>
     </html>
   );
