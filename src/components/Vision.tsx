@@ -41,7 +41,7 @@ const Vision = () => {
     <div className="bg-dark-blue pb-[65px]">
       <div id="vision" className="max-w-[1176px] container mx-auto px-8 max-sm:px-4">
         <Heading text="THE VISION" styleClass="!text-center" />
-        <div className="flex flex-wrap  md:-mx-3 sm:mx-[1px] pt-[138px] max-lg:pt-32 max-sm:pt-[88px] xl:gap-[24.6px] lg:gap-[16.6px] sm:gap-[22px] lg:justify-center">
+        <div className="flex flex-wrap  md:-mx-3 max-sm:mx-[0.5px] pt-[138px] max-lg:pt-32 max-sm:pt-[88px] xl:gap-[24.6px] lg:gap-[16.6px] sm:gap-[22px] md:gap-[28px] lg:justify-center">
           {VISION_DATA.map((item, i) => (
             <div
               key={i}
