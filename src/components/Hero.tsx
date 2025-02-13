@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
             <p className='md:text-4xl sm:text-2xl text-xl md:leading-custom-9xl font-semibold text-white max-w-[637px] text-center md:pt-[10px] md:pb-11 pt-7 pb-[82px] heroMainText'>FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
           </p>
-            <CustomButton title='Get Started' styleClass='md:!py-4 md:!px-7 !pt-3 !pb-[13px] !px-[22px] '/>
+            <CustomButton title='Get Started' styleClass='md:!py-[14px] md:!px-7 !pt-3 !pb-[13px] !px-[22px] '/>
         </div>
       </div>
     </div>
