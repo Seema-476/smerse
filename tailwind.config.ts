@@ -42,6 +42,8 @@ export default {
         "dark-blue": "#0a0a2b",
         "orange": "#ff676b",
         "light-black":"#0A0A2B80",
+        "dark-gray":"#222240",
+        "deep-gray":"#161636",
       },
       boxShadow: {
         "custom-xl": "0px 0px 15.01px 0px #FFFFFF80",
