@@ -41,11 +41,11 @@ const Vision = () => {
     <div className="bg-dark-blue pb-[65px]">
       <div id="vision" className="max-w-[1176px] container mx-auto px-8 max-sm:px-4">
         <Heading text="THE VISION" styleClass="!text-center" />
-        <div className="flex flex-wrap -mx-3 pt-[138px] max-lg:pt-32 max-sm:pt-[88px] xl:gap-[24.6px] lg:gap-[16.6px] sm:gap-[23px] lg:justify-center">
+        <div className="flex flex-wrap  md:-mx-3 sm:mx-[1px] pt-[138px] max-lg:pt-32 max-sm:pt-[88px] xl:gap-[24.6px] lg:gap-[16.6px] sm:gap-[22px] lg:justify-center">
           {VISION_DATA.map((item, i) => (
             <div
               key={i}
-              className={`md:w-[31.33%] w-[48%] p x-3 max-lg:px- 4 max-lg:w-1/2 max-sm:w-full ${
+              className={`lg:w-[31.33%] max-lg:w-[48%] max -md:w -[48%] p x-3 max-lg:px- 4 max-sm:w-full ${
                 i === 1
                   ? "max-sm:pt-[88px]"
                   : i === 2
