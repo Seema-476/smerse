@@ -8,6 +8,9 @@ import CustomButton from "./CustomButton";
 const Header = () => {
     const [open, setOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const handleClick=()=>{
+        setOpen(!open)
+    }
 
     useEffect(() => {
         const handleScroll = () => setIsScrolled(window.scrollY > .1);
@@ -45,7 +48,7 @@ const Header = () => {
                         <div className={`flex items-center max-xl:px-4 xl:gap-[63px] gap-7 relative w-full max-xl:bg-black mx-auto !text-black xl:max-h-max max-xl:fixed max-xl:top-0 max-xl:h-full max-xl:w-full max-xl:flex-col max-xl:bg-hero-pattern max-xl:duration-300 max-xl:justify-center justify-end max-xl:items-center z-[60] ${open ? "max-xl:left-0" : "max-xl:left-full"}`}>
                     <div className="flex items-center gap-5 max-xl:flex-col">
                                 {HEADER_LIST.map((item, index) => (
-                                    <Link onClick={() => setOpen(!open)} key={index} href={item.link} className="relative max-sm:text-sm text-base font-semibold leading-custom-xl text-white transition-all duration-300 ease-linear group"> {item.title}
+                                    <Link onClick={() => setOpen(!open)} key={index} href={item.link} className="relative max-sm:text-sm text-base font-semibold leading-custom-xl text-white transition-all duration-300 ease-linear group tracking-[0.5px]"> {item.title}
                                         <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all rounded-xl duration-300 ease-linear group-hover:w-full"></span>
                                     </Link>
                                 ))}
@@ -57,7 +60,7 @@ const Header = () => {
                         </div>
                             <div className="block sm:hidden">
                         <div className="flex w-full">
-                                    <CustomButton title='Mint Now' />
+                                    <CustomButton title='Mint Now' CustomOnClick={()=>handleClick()}/>
                                 </div>
                             </div>
                         </div>

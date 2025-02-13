@@ -6,6 +6,15 @@ export interface HeaderList {
     title: string;
     link: string;
 }
+export interface VisionData {
+  id:number;
+  title: string;
+  text:string;
+}
+export interface ProjectData {
+    image: string;
+    description: string;
+  }
 
 export const HEADER_LIST: HeaderList[] = [
     {
@@ -63,7 +72,7 @@ export const ABOUT_DATA: AboutItem[] = [
         description: "Users can earn additional rewards, including rare NFTs the more they engage in physical activity.",
     }
 ];
-export const VISION_DATA = [
+export const VISION_DATA: VisionData[] = [
     {
         id: 1,
         title: '01',
@@ -80,7 +89,7 @@ export const VISION_DATA = [
         text: 'We believe in the value of social-fi & game-fi elements & strive to create a fitness experience unlike any other existing today. We will be partnering with top fitness brands & companies to create long-lasting partnerships that will enhance & create ease of access to fitness & health resources to our community members and NFT Holders.'
     }
 ];
-export const PROJECT_DATA = [
+export const PROJECT_DATA: ProjectData[] = [
     {
         image: "/assets/images/svg/nft-icon.svg",
         description: "NFT Avatars make up the core of the Smerse Project on the Ethereum Blockchain. Each male or female Avatar is unique itself & come with different traits upon minting & can further be customized with future additions on our In-App Marketplace.",
