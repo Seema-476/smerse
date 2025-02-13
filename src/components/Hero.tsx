@@ -1,18 +1,9 @@
 "use client"
-import React, { useEffect } from "react";
 import Image from "next/image";
 import Header from './common/Header'
 import CustomButton from './common/CustomButton';
-import { gsap } from "gsap";
 
 const Hero = () => {
-  useEffect(() => {
-    let tl = gsap.timeline();
-    tl.fromTo(
-      ".hero MainText",
-      {scale: 0,},{scale: 1,delay: 3,duration: 1,stagger: 0.5,}
-    );
-  });
   return (
     <>
     <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative'>
@@ -27,8 +18,8 @@ const Hero = () => {
        </div>
       <div className='container max-md:px-4 max-lg:px-8'>
         <div className='flex flex-col items-center'>
-            <Image src="/assets/images/webp/hero-logo.webp" alt='hero-logo' width={404} height={241} className='lg:max-w-[404px] md:max-w-[360px] sm::max-w-[300px] max-w-[256px] lg:pt-[52px] pt-[79px] md:pb-8 pb-[108px] heroMainText' />
-            <div className="relative heroMainText">
+            <Image src="/assets/images/webp/hero-logo.webp" alt='hero-logo' width={404} height={241} className='lg:max-w-[404px] md:max-w-[360px] sm::max-w-[300px] max-w-[256px] lg:pt-[52px] pt-[79px] md:pb-8 pb-[108px]' />
+            <div className="relative">
               <h1 className="pt-8 md:text-8xl text-[40px] leading-[48px] font-black md:leading-custom-12xl text-white tracking-[6px] relative z-10 max-md:text-[40px] max-md:pt-10">
               SMERSE
             </h1>
@@ -38,7 +29,7 @@ const Hero = () => {
           </div>
             <p className='md:text-4xl sm:text-2xl text-xl md:leading-custom-9xl font-semibold text-white max-w-[637px] text-center md:pt-[10px] md:pb-11 pt-7 pb-[82px] heroMainText'>FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
           </p>
-            <CustomButton title='Get Started' styleClass='md:!py-4 md:!px-7 !pt-3 !pb-[13px] !px-[22px] heroMainText'/>
+            <CustomButton title='Get Started' styleClass='md:!py-4 md:!px-7 !pt-3 !pb-[13px] !px-[22px] '/>
         </div>
       </div>
     </div>
