@@ -29,10 +29,10 @@ const Header = () => {
         <div className={`bg-light-black md:h-[100px] sm:h-16 h-[50px] flex items-center w-full transition-all duration-500 ${isScrolled ? "fixed top-0 left-0 w-full shadow-lg !bg-black !z-[100]" : "relative"
             }`}>
                 <div className="container max-w-[1176px] flex justify-between w-full mx-auto items-center relative max-sm:px-4 px-8">
-                    <button onClick={() => setOpen(!open)} className={`hidden w-[39px] h-8 justify-between items-center max-xl:absolute max-xl:right-8 max-md:right-8 max-sm:right-4 relative z-[70] max-xl:flex flex-col overflow-hidden ${open ?"pt-3":"pt-0"}`}>
-                    <span className={`w-full transition-all duration-300 min-h-[5px] rounded-sm bg-white relative after:w-full after:h-full after:absolute after:top-0 after:left-0 ${open ? "rotate-45 !-mb-1 after:rotate-90 after:!rounded-sm after:bg-white !bg-white" : ""}`}></span>
-                        <span className={`w-full transition-all duration-300 min-h-[5px] rounded-sm bg-white ${open ? "hidden" : ""}`}></span>
-                        <span className={`w-full transition-all duration-300 min-h-[5px] rounded-sm bg-white after:!bg-white ${open ? "-translate-x-10 !bg-white" : ""}`}></span>
+                    <button onClick={() => setOpen(!open)} className={`hidden md:w-[39px] md:h-8 w-3.5 h-[11.5px] justify-between items-center max-xl:absolute max-xl:right-8 max-md:right-8 max-sm:right-4 relative z-[70] max-xl:flex flex-col overflow-hidden ${open ?"md:pt-3 pt-[5px]":"pt-0"}`}>
+                    <span className={`w-full transition-all duration-300 md:min-h-[5px] h-[2px] rounded-sm bg-white relative after:w-full after:h-full after:absolute after:top-0 after:left-0 ${open ? "rotate-45 !-mb-1 after:rotate-90 after:!rounded-sm after:bg-white !bg-white" : ""}`}></span>
+                        <span className={`w-full transition-all duration-300 md:min-h-[5px] h-[2px] rounded-sm bg-white ${open ? "hidden" : ""}`}></span>
+                        <span className={`w-full transition-all duration-300 md:min-h-[5px] h-[2px] rounded-sm bg-white after:!bg-white ${open ? "-translate-x-10 !bg-white" : ""}`}></span>
                     </button>
                 <Link href="/">
                         <Image className="lg:w-[68px] md:w-[76px] w-10 h-auto " src="/assets/images/webp/header-logo.webp" width={68} height={68} alt="logo" />
